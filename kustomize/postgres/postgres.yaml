@@ -11,6 +11,7 @@ spec:
   instances:
     - name: instance1
       dataVolumeClaimSpec:
+        storageClassName: thin-csi
         accessModes:
         - "ReadWriteOnce"
         resources:
